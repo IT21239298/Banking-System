@@ -15,6 +15,13 @@ public class Login  extends JFrame {
         image.setBounds(350, 10,100,100);
         add(image);
 
+        ImageIcon ii1 = new ImageIcon(ClassLoader.getSystemResource("icon/card.png") );
+        Image ii2 = ii1.getImage().getScaledInstance(100,100, Image.SCALE_DEFAULT);
+        ImageIcon ii3 = new ImageIcon(ii2);
+        JLabel image1 = new JLabel(ii3);
+        image1.setBounds(630, 350,100,100);
+        add(image1);
+
         setLayout(null);
         setSize(850,480);
         setLocation(450,200);
