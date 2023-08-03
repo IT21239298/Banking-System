@@ -64,6 +64,7 @@ public class Login  extends JFrame  implements ActionListener {
         button1.setForeground(Color.WHITE);
         button1.setBackground(Color.BLACK);
         button1.setBounds(300,300,100,30);
+        button1.addActionListener(this);
         add(button1);
 
         button2 = new JButton("CLEAR");
@@ -71,6 +72,7 @@ public class Login  extends JFrame  implements ActionListener {
         button2.setForeground(Color.WHITE);
         button2.setBackground(Color.BLACK);
         button2.setBounds(430,300,100,30);
+        button2.addActionListener(this);
         add(button2);
 
         button3 = new JButton("SIGN UP");
@@ -78,6 +80,7 @@ public class Login  extends JFrame  implements ActionListener {
         button3.setForeground(Color.WHITE);
         button3.setBackground(Color.BLACK);
         button3.setBounds(300,350,230,30);
+        button3.addActionListener(this);
         add(button3);
 
         
@@ -99,7 +102,19 @@ public class Login  extends JFrame  implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        try{
+            if(e.getSource()==button1){
 
+            }else if (e.getSource()== button2){
+                textField2.setText("");
+                passwordField3.setText("");
+                
+            } else if (e.getSource()== button3) {
+                
+            }
+        }catch(Exception E){
+            E.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
