@@ -9,6 +9,9 @@ public class Login  extends JFrame {
     JTextField textField2;
     JPasswordField passwordField3;
 
+    JButton button1,button2,button3;
+
+
     Login(){
         super("Bank Management System");
 
@@ -53,6 +56,28 @@ public class Login  extends JFrame {
         passwordField3.setBounds(325,250,230,30);
         passwordField3.setFont(new Font("Arial",Font.BOLD,14));
         add(passwordField3);
+
+        button1 = new JButton("SIGN IN");
+        button1.setFont(new Font("Arial", Font.BOLD,14));
+        button1.setForeground(Color.WHITE);
+        button1.setBackground(Color.BLACK);
+        button1.setBounds(300,300,100,30);
+        add(button1);
+
+        button2 = new JButton("CLEAR");
+        button2.setFont(new Font("Arial",Font.BOLD,14));
+        button2.setForeground(Color.WHITE);
+        button2.setBackground(Color.BLACK);
+        button2.setBounds(430,300,100,30);
+        add(button2);
+
+        button3 = new JButton("SIGN UP");
+        button3.setFont(new Font("Arial",Font.BOLD,14));
+        button3.setForeground(Color.WHITE);
+        button3.setBackground(Color.BLACK);
+        button3.setBounds(300,350,230,30);
+        add(button3);
+
         
 
 
