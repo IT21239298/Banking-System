@@ -4,11 +4,15 @@ import com.toedter.calendar.JDateChooser;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Random;
 
-public class Signup extends JFrame {
+public class Signup extends JFrame  implements ActionListener {
 
     JRadioButton r1,r2,m1,m2,m3;
+
+    JButton next;
 
     JTextField textName,textFname,textEmail,textAdd,textCity,textPin,textState;
 
@@ -132,10 +136,6 @@ public class Signup extends JFrame {
         buttonGroup1.add(m2);
         buttonGroup1.add(m3);
 
-
-
-
-
         JLabel labeladd = new JLabel("Address :");
         labeladd.setFont(new Font("Railway",Font.BOLD,20));
         labeladd.setBounds(100,490,200,30);
@@ -176,22 +176,13 @@ public class Signup extends JFrame {
         textState.setBounds(300,640,400,30);
         add(textState);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        next = new JButton("Next");
+        next.setFont(new Font("Railway",Font.BOLD,14));
+        next.setBackground(Color.BLACK);
+        next.setForeground(Color.WHITE);
+        next.setBounds(620,710,80,30);
+        next.addActionListener(this);
+        add(next);
 
         getContentPane().setBackground(new Color(222,255,228));
         setLayout(null);
@@ -200,6 +191,10 @@ public class Signup extends JFrame {
         setVisible(true);
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
 
     public static void main(String[] args) {
         new Signup();
