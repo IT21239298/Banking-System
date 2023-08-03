@@ -2,8 +2,14 @@ package bank;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Random;
 
 public class Signup extends JFrame {
+
+    Random ran = new Random();
+    long first4 = (ran.nextLong() % 9000L) + 1000L;
+
+    String first = "" + Math.abs(first4);
     Signup(){
         super("APPLICATION FORM");
 
@@ -13,6 +19,11 @@ public class Signup extends JFrame {
         JLabel image = new JLabel(i3);
         image.setBounds(25,10,100,100);
         add(image);
+
+        JLabel label1 = new JLabel("APPLICATION FORM NO."+ first);
+        label1.setBounds(160,20,600,40);
+        label1.setFont(new Font("Railway",Font.BOLD,38));
+        add(label1);
 
 
 
