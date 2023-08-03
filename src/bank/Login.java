@@ -2,8 +2,10 @@ package bank;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Login  extends JFrame {
+public class Login  extends JFrame  implements ActionListener {
 
     JLabel label1,label2,label3;
     JTextField textField2;
@@ -93,6 +95,11 @@ public class Login  extends JFrame {
         setSize(850,480);
         setLocation(450,200);
         setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
     }
 
     public static void main(String[] args) {
