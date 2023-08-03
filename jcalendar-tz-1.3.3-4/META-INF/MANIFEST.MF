@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: luis
+Build-Jdk: 1.5.0_22
+Main-Class: com.toedter.calendar.demo.JCalendarDemo
+
+Name: com/toedter/components/JLocaleChooser.class
+Java-Bean: true
+
+Name: com/toedter/calendar/JCalendar.class
+Java-Bean: true
+
+Name: com/toedter/calendar/JYearChooser.class
+Java-Bean: true
+
+Name: com/toedter/calendar/JMonthChooser.class
+Java-Bean: true
+
+Name: com/toedter/calendar/JDayChooser.class
+Java-Bean: true
+
+Name: com/toedter/calendar/JDateChooser.class
+Java-Bean: true
+
+Name: com/toedter/components/JSpinField.class
+Java-Bean: true
+

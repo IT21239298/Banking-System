@@ -8,7 +8,9 @@ import java.util.Random;
 
 public class Signup extends JFrame {
 
-    JTextField textName,textFname;
+    JRadioButton r1,r2,m1,m2,m3;
+
+    JTextField textName,textFname,textEmail,textAdd,textCity,textPin,textState;
 
     JDateChooser dateChooser;
 
@@ -70,6 +72,116 @@ public class Signup extends JFrame {
         dateChooser.setForeground(new Color(105,105,105));
         dateChooser.setBounds(300,340,400,30);
         add(dateChooser);
+
+        JLabel label6 = new JLabel("Gender");
+        label6.setFont(new Font("Railway", Font.BOLD,20));
+        label6.setBounds(100,290,200,30);
+        add(label6);
+
+        r1 = new JRadioButton("Male");
+        r1.setFont(new Font("Railway",Font.BOLD,14));
+        r1.setBackground(new Color(222,255,228));
+        r1.setBounds(300,290,60,30);
+        add(r1);
+
+        r2 = new JRadioButton("Female");
+        r2.setFont(new Font("Railway",Font.BOLD,14));
+        r2.setBackground(new Color(222,255,228));
+        r2.setBounds(450,290,90,30);
+        add(r2);
+
+        ButtonGroup buttonGroup = new ButtonGroup();
+        buttonGroup.add(r1);
+        buttonGroup.add(r2);
+
+        JLabel labelEMail = new JLabel("Email Address :");
+        labelEMail.setFont(new Font("Railway",Font.BOLD,20));
+        labelEMail.setBounds(100,390,200,30);
+        add(labelEMail);
+
+        textEmail = new JTextField();
+        textEmail.setFont(new Font("Railway",Font.BOLD,14));
+        textEmail.setBounds(300,390,400,30);
+        add(textEmail);
+
+        JLabel labelMs = new JLabel("Marital Status :");
+        labelMs.setFont(new Font("Railway",Font.BOLD,20));
+        labelMs.setBounds(100,440,200,30);
+        add(labelMs);
+
+        m1 = new JRadioButton("Married");
+        m1.setBounds(300,440,100,30);
+        m1.setBackground(new Color(222,255,228));
+        m1.setFont(new Font("Railway", Font.BOLD,14));
+        add(m1);
+
+        m2 = new JRadioButton("Unmrried");
+        m2.setBounds(450,440,100,30);
+        m2.setBackground(new Color(222,255,228));
+        m2.setFont(new Font("Railway", Font.BOLD,14));
+        add(m2);
+
+        m3 = new JRadioButton("Other");
+        m3.setBounds(635,440,100,30);
+        m3.setBackground(new Color(222,255,228));
+        m3.setFont(new Font("Railway", Font.BOLD,14));
+        add(m3);
+
+        ButtonGroup buttonGroup1 = new ButtonGroup();
+        buttonGroup1.add(m1);
+        buttonGroup1.add(m2);
+        buttonGroup1.add(m3);
+
+
+
+
+
+        JLabel labeladd = new JLabel("Address :");
+        labeladd.setFont(new Font("Railway",Font.BOLD,20));
+        labeladd.setBounds(100,490,200,30);
+        add(labeladd);
+
+        textAdd = new JTextField();
+        textAdd.setFont(new Font("Railway",Font.BOLD,14));
+        textAdd.setBounds(300,490,400,30);
+        add(textAdd);
+
+        JLabel labelCity = new JLabel("City :");
+        labelCity.setFont(new Font("Railway",Font.BOLD,20));
+        labelCity.setBounds(100,540,200,30);
+        add(labelCity);
+
+        textCity = new JTextField();
+        textCity.setFont(new Font("Railway",Font.BOLD,14));
+        textCity.setBounds(300,540,400,30);
+        add(textCity);
+
+        JLabel labelPin = new JLabel("Pin Code :");
+        labelPin.setFont(new Font("Railway",Font.BOLD,20));
+        labelPin.setBounds(100,590,200,30);
+        add(labelPin);
+
+        textPin = new JTextField();
+        textPin.setFont(new Font("Railway",Font.BOLD,14));
+        textPin.setBounds(300,590,400,30);
+        add(textPin);
+
+        JLabel labelState = new JLabel("State :");
+        labelState.setFont(new Font("Railway",Font.BOLD,20));
+        labelState.setBounds(100,640,200,30);
+        add(labelState);
+
+        textState = new JTextField();
+        textState.setFont(new Font("Railway",Font.BOLD,14));
+        textState.setBounds(300,640,400,30);
+        add(textState);
+
+
+
+
+
+
+
 
 
 
