@@ -194,6 +194,12 @@ public class Signup extends JFrame  implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
+        String formmno = first;
+        String name = textName.getText();
+        String fname = textFname.getText();
+        String dob = ((JTextField) dateChooser.getDateEditor().getUiComponent()).getText();
+
+
     }
 
     public static void main(String[] args) {
