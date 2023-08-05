@@ -220,6 +220,21 @@ public class Signup extends JFrame  implements ActionListener {
         String pincode = textPin.getText();
         String state = textState.getText();
 
+        try{
+            if(textName.getText().equals("")){
+                JOptionPane.showMessageDialog(null,"Fill all the field");
+            }else{
+                Con con1 = new Con();
+                String q = "insert into singup values('"+formmno+"', '"+name+"','"+fname+"','"+dob+"','"+gender+"','"+email+"','"+marital+"', '"+address+"', '"+city+"','"+pincode+"','"+state+"' )";
+                con1.statement.executeUpdate(q);
+                new Singup2();
+                setVisible(false);
+
+            }
+        }catch (Exception E){
+            E.printStackTrace();
+        }
+
     }
 
     public static void main(String[] args) {
