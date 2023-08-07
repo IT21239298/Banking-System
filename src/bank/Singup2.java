@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Singup2  extends JFrame {
-    JComboBox comboBox,comboBox2,comboBox3;
+    JComboBox comboBox,comboBox2,comboBox3,comboBox4;
+    JTextField textPan,textId;
 
     String formno;
 
@@ -64,6 +65,51 @@ public class Singup2  extends JFrame {
         comboBox3.setFont(new Font("Railway",Font.BOLD,14));
         comboBox3.setBounds(350,220,320,30);
         add(comboBox3);
+
+        JLabel l6 = new JLabel("Education");
+        l6.setFont(new Font("Railway",Font.BOLD,18));
+        l6.setBounds(100,270,150,30);
+        add(l6);
+
+        String education[] = {"Non-Graduate","Graduate","Graduate","Post-Graduate","Doctrate","Other"};
+        comboBox4 = new JComboBox(education);
+        comboBox4.setBackground(new Color(252,208,76));
+        comboBox4.setFont(new Font("Railway",Font.BOLD,14));
+        comboBox4.setBounds(350,270,320,30);
+        add(comboBox4);
+
+        JLabel l7 = new JLabel("Occupation");
+        l7.setFont(new Font("Railway",Font.BOLD,18));
+        l7.setBounds(100,340,150,30);
+        add(l7);
+
+        String occupation[] = {"Salaried","Self-Employed","Business","Student","Retired","Other"};
+        comboBox4 = new JComboBox(occupation);
+        comboBox4.setBackground(new Color(252,208,76));
+        comboBox4.setFont(new Font("Railway",Font.BOLD,14));
+        comboBox4.setBounds(350,340,320,30);
+        add(comboBox4);
+
+        JLabel l8 = new JLabel("PAN Number");
+        l8.setFont(new Font("Railway",Font.BOLD,18));
+        l8.setBounds(100,390,320,30);
+        add(l8);
+
+        textPan = new JTextField();
+        textPan.setFont(new Font("Railway",Font.BOLD,18));
+        textPan.setBounds(350,390,320,30);
+        add(textPan);
+
+        JLabel l9 = new JLabel("ID Number");
+        l9.setFont(new Font("Railway",Font.BOLD,18));
+        l9.setBounds(100,440,320,30);
+        add(l9);
+
+        textId = new JTextField();
+        textId.setFont(new Font("Railway",Font.BOLD,18));
+        textId.setBounds(350,440,320,30);
+        add(textId);
+
 
 
 
