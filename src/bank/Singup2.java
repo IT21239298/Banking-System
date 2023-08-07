@@ -2,8 +2,10 @@ package bank;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Singup2  extends JFrame {
+public class Singup2  extends JFrame implements ActionListener{
     JComboBox comboBox,comboBox2,comboBox3,comboBox4;
     JRadioButton r1,r2,e1,e2;
     JTextField textPan,textId;
@@ -162,15 +164,8 @@ public class Singup2  extends JFrame {
         next.setBackground(Color.WHITE);
         next.setForeground(Color.BLACK);
         next.setBounds(570,640,100,30);
+        next.addActionListener(this);
         add(next);
-
-
-
-
-
-
-
-
 
         setLayout(null);
         setSize(850,750);
@@ -181,6 +176,11 @@ public class Singup2  extends JFrame {
 
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+
+    }
 
     public static void main(String[] args) {
         new Singup2("");
