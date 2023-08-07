@@ -8,6 +8,8 @@ public class Singup2  extends JFrame {
     JRadioButton r1,r2,e1,e2;
     JTextField textPan,textId;
 
+    JButton next;
+
     String formno;
 
     Singup2(String first){
@@ -144,6 +146,24 @@ public class Singup2  extends JFrame {
         e2.setBackground(new Color(252,208,76));
         e2.setBounds(460,540,100,30);
         add(e2);
+
+        JLabel l12 = new JLabel("Form No :");
+        l12.setFont(new Font("Railway",Font.BOLD,18));
+        l12.setBounds(700,10,100,30);
+        add(l12);
+
+        JLabel l13 = new JLabel(formno);
+        l13.setFont(new Font("Railway",Font.BOLD,18));
+        l13.setBounds(760,10,60,30);
+        add(l13);
+
+        next = new JButton("Next");
+        next.setFont(new Font("Railway",Font.BOLD,14));
+        next.setBackground(Color.WHITE);
+        next.setForeground(Color.BLACK);
+        next.setBounds(570,640,100,30);
+        add(next);
+
 
 
 
