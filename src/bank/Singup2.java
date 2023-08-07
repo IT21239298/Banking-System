@@ -128,22 +128,22 @@ public class Singup2  extends JFrame {
         r2.setBounds(460,490,100,30);
         add(r2);
 
-        JLabel l11 = new JLabel("Senior Citizen :");
+        JLabel l11 = new JLabel("Existing Account :");
         l11.setFont(new Font("Railway",Font.BOLD,18));
-        l11.setBounds(100,490,320,30);
+        l11.setBounds(100,540,320,30);
         add(l11);
 
-        r1 = new JRadioButton("Yes");
-        r1.setFont(new Font("Railway",Font.BOLD,14));
-        r1.setBackground(new Color(252,208,76));
-        r1.setBounds(350,490,100,30);
-        add(r1);
+        e1 = new JRadioButton("Yes");
+        e1.setFont(new Font("Railway",Font.BOLD,14));
+        e1.setBackground(new Color(252,208,76));
+        e1.setBounds(350,540,100,30);
+        add(e1);
 
-        r2 = new JRadioButton("No");
-        r2.setFont(new Font("Railway",Font.BOLD,14));
-        r2.setBackground(new Color(252,208,76));
-        r2.setBounds(460,490,100,30);
-        add(r2);
+        e2 = new JRadioButton("No");
+        e2.setFont(new Font("Railway",Font.BOLD,14));
+        e2.setBackground(new Color(252,208,76));
+        e2.setBounds(460,540,100,30);
+        add(e2);
 
 
 
