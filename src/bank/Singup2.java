@@ -5,6 +5,7 @@ import java.awt.*;
 
 public class Singup2  extends JFrame {
     JComboBox comboBox,comboBox2,comboBox3,comboBox4;
+    JRadioButton r1,r2,e1,e2;
     JTextField textPan,textId;
 
     String formno;
@@ -109,6 +110,41 @@ public class Singup2  extends JFrame {
         textId.setFont(new Font("Railway",Font.BOLD,18));
         textId.setBounds(350,440,320,30);
         add(textId);
+
+        JLabel l10 = new JLabel("Senior Citizen :");
+        l10.setFont(new Font("Railway",Font.BOLD,18));
+        l10.setBounds(100,490,320,30);
+        add(l10);
+
+        r1 = new JRadioButton("Yes");
+        r1.setFont(new Font("Railway",Font.BOLD,14));
+        r1.setBackground(new Color(252,208,76));
+        r1.setBounds(350,490,100,30);
+        add(r1);
+
+        r2 = new JRadioButton("No");
+        r2.setFont(new Font("Railway",Font.BOLD,14));
+        r2.setBackground(new Color(252,208,76));
+        r2.setBounds(460,490,100,30);
+        add(r2);
+
+        JLabel l11 = new JLabel("Senior Citizen :");
+        l11.setFont(new Font("Railway",Font.BOLD,18));
+        l11.setBounds(100,490,320,30);
+        add(l11);
+
+        r1 = new JRadioButton("Yes");
+        r1.setFont(new Font("Railway",Font.BOLD,14));
+        r1.setBackground(new Color(252,208,76));
+        r1.setBounds(350,490,100,30);
+        add(r1);
+
+        r2 = new JRadioButton("No");
+        r2.setFont(new Font("Railway",Font.BOLD,14));
+        r2.setBackground(new Color(252,208,76));
+        r2.setBounds(460,490,100,30);
+        add(r2);
+
 
 
 
