@@ -2,12 +2,16 @@ package bank;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Signup3 extends JFrame {
+public class Signup3 extends JFrame implements ActionListener {
 
     JRadioButton r1,r2,r3,r4;
 
     JCheckBox c1,c2,c3,c4,c5,c6;
+
+    JButton s,c;
 
     Signup3(){
 
@@ -145,14 +149,29 @@ public class Signup3 extends JFrame {
         c7.setBounds(100,680,600,20);
         add(c7);
 
+        JLabel l12 = new JLabel("Form No :");
+        l12.setFont(new Font("Railway",Font.BOLD,14));
+        l12.setBounds(700,10,100,30);
+        add(l12);
 
+        JLabel l13 = new JLabel();
+        l13.setFont(new Font("Railway",Font.BOLD,14));
+        l13.setBounds(760,10,60,30);
+        add(l13);
 
+        s = new JButton("Submit");
+        s.setFont(new Font("Railway",Font.BOLD,14));
+        s.setBackground(Color.BLACK);
+        s.setForeground(Color.WHITE);
+        s.setBounds(250,720,100,30);
+        add(s);
 
-
-
-
-
-
+        c = new JButton("Cancel");
+        c.setFont(new Font("Railway",Font.BOLD,14));
+        c.setBackground(Color.BLACK);
+        c.setForeground(Color.WHITE);
+        c.setBounds(420,720,100,30);
+        add(c);
 
 
         getContentPane().setBackground(new Color(215,252,252));
@@ -164,6 +183,10 @@ public class Signup3 extends JFrame {
 
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
 
     public static void main(String[] args) {
         new Signup3();
