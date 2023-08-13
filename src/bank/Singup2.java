@@ -185,6 +185,17 @@ public class Singup2  extends JFrame implements ActionListener{
         String edu = (String) comboBox4.getSelectedItem();
         String occ = (String) comboBox5.getSelectedItem();
 
+        String pan = textPan.getText();
+        String id = textId.getText();
+
+        String scitizen = "";
+        if((r1.isSelected())){
+            scitizen = "Yes";
+        } else if (r2.isSelected()) {
+            scitizen = "No";
+
+        }
+
 
     }
 
