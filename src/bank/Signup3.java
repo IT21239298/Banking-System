@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 public class Signup3 extends JFrame implements ActionListener {
 
@@ -45,7 +46,7 @@ public class Signup3 extends JFrame implements ActionListener {
         r1.setBounds(100,180,150,30);
         add(r1);
 
-        r2 = new JRadioButton("FIxed Deposit Account");
+        r2 = new JRadioButton("Fixed Deposit Account");
         r2.setFont(new Font("Railway",Font.BOLD,16));
         r2.setBackground(new Color(215,252,252));
         r2.setBounds(350,180,300,30);
@@ -166,6 +167,7 @@ public class Signup3 extends JFrame implements ActionListener {
         s.setBackground(Color.BLACK);
         s.setForeground(Color.WHITE);
         s.setBounds(250,720,100,30);
+        s.addActionListener(this);
         add(s);
 
         c = new JButton("Cancel");
@@ -173,6 +175,7 @@ public class Signup3 extends JFrame implements ActionListener {
         c.setBackground(Color.BLACK);
         c.setForeground(Color.WHITE);
         c.setBounds(420,720,100,30);
+        c.addActionListener(this);
         add(c);
 
 
@@ -187,6 +190,55 @@ public class Signup3 extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+
+        String atype = null;
+        if (r1.isSelected()){
+            atype = "Saving Account";
+        } else if (r2.isSelected()) {
+            atype = "Fixed Deposit Account ";
+
+        } else if (r3.isSelected()) {
+            atype = " Current Account";
+        } else if (r4.isSelected()) {
+            atype = "Recurring Deposit Account";
+        }
+
+        Random ran = new Random();
+        long first7 = (ran.nextLong() % 90000000L) + 1409963000000000L;
+        String cardno = "" + Math.abs(first7);
+
+        long first3 = (ran.nextLong() % 9000L) + 1000L;
+        String pin = "" + Math.abs(first3);
+
+        String fac = "";
+        if (c1.isSelected()){
+            fac = fac+"ATM CARD";
+        } else if (c2.isSelected()) {
+            fac = fac+"Internet Banking";
+
+        } else if (c3.isSelected()) {
+            fac  = fac+"Mobile Banking";
+        } else if (c4.isSelected()) {
+            fac = fac+"Email Alerts";
+        } else if (c5.isSelected()) {
+            fac = fac+"Cheque Book";
+        }else if (c6.isSelected()){
+            fac = fac+"E-Statement";
+        }
+
+        try{
+            if(e.getSource()==s){
+                if (atype.equals("")){
+                    JOptionPane.showMessageDialog(null, "Fill all the fields");
+                }else {
+                    Con c1 = new Con();
+                    String
+                }
+            }
+
+        }catch (Exception E){
+            E.printStackTrace();
+        }
 
     }
 
