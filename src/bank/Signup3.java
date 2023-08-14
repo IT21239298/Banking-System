@@ -13,7 +13,9 @@ public class Signup3 extends JFrame implements ActionListener {
 
     JButton s,c;
 
-    Signup3(){
+    String formno;
+    Signup3( String formno){
+        this.formno = formno;
 
         ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("icon/bank.png"));
         Image i2 = i1.getImage().getScaledInstance(100,100,Image.SCALE_DEFAULT);
@@ -189,7 +191,7 @@ public class Signup3 extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new Signup3();
+        new Signup3("");
 
     }
 }

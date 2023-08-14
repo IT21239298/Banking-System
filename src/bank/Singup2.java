@@ -76,7 +76,7 @@ public class Singup2  extends JFrame implements ActionListener{
         l6.setBounds(100,270,150,30);
         add(l6);
 
-        String education[] = {"Non-Graduate","Graduate","Graduate","Post-Graduate","Doctrate","Other"};
+        String education[] = {"Non-Graduate","UnderGraduate","Graduate","Post-Graduate","Doctrate","Other"};
         comboBox4 = new JComboBox(education);
         comboBox4.setBackground(new Color(252,208,76));
         comboBox4.setFont(new Font("Railway",Font.BOLD,14));
@@ -193,6 +193,28 @@ public class Singup2  extends JFrame implements ActionListener{
             scitizen = "Yes";
         } else if (r2.isSelected()) {
             scitizen = "No";
+
+        }
+        String eAccount = "";
+        if((e1.isSelected())){
+            eAccount = "Yes";
+        } else if (e2.isSelected()) {
+            eAccount = "No";
+        }
+        try{
+            if (textPan.getText().equals("") || textId.getText().equals("")){
+                JOptionPane.showMessageDialog(null,"Fill all the fields");
+            }else{
+                Con c1  = new Con();
+                String q = "insert into singup2 values('"+formno+"','"+rel+"','"+cate+"', '"+inc+"', '"+edu+"', '"+occ+"','"+pan+"','"+id+"','"+scitizen+"', '"+eAccount+"')";
+                c1.statement.executeUpdate(q);
+                new Signup3(formno);
+                setVisible(false);
+            }
+
+
+        }catch (Exception E){
+            E.printStackTrace();
 
         }
 
