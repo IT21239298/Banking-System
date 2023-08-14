@@ -13,7 +13,6 @@ public class Signup extends JFrame  implements ActionListener {
     JRadioButton r1,r2,m1,m2,m3;
 
     JButton next;
-
     JTextField textName,textFname,textEmail,textAdd,textCity,textPin,textState;
 
     JDateChooser dateChooser;
@@ -190,7 +189,6 @@ public class Signup extends JFrame  implements ActionListener {
         setLocation(360,40);
         setVisible(true);
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -236,7 +234,6 @@ public class Signup extends JFrame  implements ActionListener {
         }
 
     }
-
     public static void main(String[] args) {
         new Signup();
     }
