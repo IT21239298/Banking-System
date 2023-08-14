@@ -15,6 +15,7 @@ public class Signup3 extends JFrame implements ActionListener {
     JButton s,c;
 
     String formno;
+
     Signup3( String formno){
         this.formno = formno;
 
