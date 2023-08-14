@@ -173,7 +173,6 @@ public class Singup2  extends JFrame implements ActionListener{
         getContentPane().setBackground(new Color(252,208,76));
         setVisible(true);
 
-
     }
 
     @Override
@@ -217,8 +216,6 @@ public class Singup2  extends JFrame implements ActionListener{
             E.printStackTrace();
 
         }
-
-
     }
 
     public static void main(String[] args) {
