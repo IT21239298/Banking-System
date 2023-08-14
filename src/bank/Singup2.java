@@ -83,7 +83,7 @@ public class Singup2  extends JFrame implements ActionListener{
         comboBox4.setBounds(350,270,320,30);
         add(comboBox4);
 
-        JLabel l7 = new JLabel("Occupation");
+        JLabel l7 = new JLabel("Occupation ");
         l7.setFont(new Font("Railway",Font.BOLD,18));
         l7.setBounds(100,340,150,30);
         add(l7);
@@ -95,7 +95,7 @@ public class Singup2  extends JFrame implements ActionListener{
         comboBox5.setBounds(350,340,320,30);
         add(comboBox5);
 
-        JLabel l8 = new JLabel("PAN Number");
+        JLabel l8 = new JLabel("PAN Number ");
         l8.setFont(new Font("Railway",Font.BOLD,18));
         l8.setBounds(100,390,320,30);
         add(l8);
@@ -105,7 +105,7 @@ public class Singup2  extends JFrame implements ActionListener{
         textPan.setBounds(350,390,320,30);
         add(textPan);
 
-        JLabel l9 = new JLabel("ID Number");
+        JLabel l9 = new JLabel("ID Number ");
         l9.setFont(new Font("Railway",Font.BOLD,18));
         l9.setBounds(100,440,320,30);
         add(l9);
