@@ -39,14 +39,14 @@ public class Deposit extends JFrame  implements ActionListener {
         b1.setBounds(700,352,150,35);
         b1.setBackground(new Color(65,125,128));
         b1.setForeground(Color.WHITE);
-       // b1.addActionListener(this);
+        b1.addActionListener(this);
         l3.add(b1);
 
         b2 = new JButton("BACK");
         b2.setBounds(700,406,150,35);
         b2.setBackground(new Color(65,125,128));
         b2.setForeground(Color.WHITE);
-        // b2.addActionListener(this);
+        b2.addActionListener(this);
         l3.add(b2);
 
 
@@ -64,6 +64,17 @@ public class Deposit extends JFrame  implements ActionListener {
             String amount = textField.getText();
             Date date = new Date();
             if (e.getSource()==b1){
+                if (textField.getText().equals("")){
+                    JOptionPane.showMessageDialog(null,"Please enter the Amount you want to deposit");
+                }else{
+                    Con c = new Con();
+                    c.statement.executeUpdate("insert into bank values ('"+pin+"','"+date+"','Deposit','"+amount+"')");
+                    JOptionPane.showMessageDialog(null,"Rs."+amount+" Deposit SuccessFully..!");
+                    setVisible(false);
+                }
+
+            }else if (e.getSource()==b2){
+                setVisible(false);
 
             }
         }catch (Exception E){

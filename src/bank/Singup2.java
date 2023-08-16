@@ -14,7 +14,7 @@ public class Singup2  extends JFrame implements ActionListener{
 
     String formno;
 
-    Singup2(String first){
+    Singup2(String formno){
         super("APPLICATION FORM");
 
         ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("icon/bank.png"));
@@ -149,14 +149,14 @@ public class Singup2  extends JFrame implements ActionListener{
         e2.setBounds(460,540,100,30);
         add(e2);
 
-        JLabel l12 = new JLabel("Form No :");
-        l12.setFont(new Font("Railway",Font.BOLD,18));
+        JLabel l12 = new JLabel("Form No:");
+        l12.setFont(new Font("Railway",Font.BOLD,14));
         l12.setBounds(700,10,100,30);
         add(l12);
 
         JLabel l13 = new JLabel(formno);
-        l13.setFont(new Font("Railway",Font.BOLD,18));
-        l13.setBounds(760,10,60,30);
+        l13.setFont(new Font("Railway",Font.BOLD,12));
+        l13.setBounds(770,10,60,30);
         add(l13);
 
         next = new JButton("Next");
