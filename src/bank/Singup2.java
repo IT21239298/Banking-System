@@ -200,6 +200,7 @@ public class Singup2  extends JFrame implements ActionListener{
         } else if (e2.isSelected()) {
             eAccount = "No";
         }
+        //crete data base connection
         try{
             if (textPan.getText().equals("") || textId.getText().equals("")){
                 JOptionPane.showMessageDialog(null,"Fill all the fields");

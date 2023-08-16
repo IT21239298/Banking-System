@@ -186,7 +186,6 @@ public class Signup3 extends JFrame implements ActionListener {
         setLocation(400,20);
         setVisible(true);
 
-
     }
 
     @Override
@@ -251,7 +250,6 @@ public class Signup3 extends JFrame implements ActionListener {
         }
 
     }
-
     public static void main(String[] args) {
         new Signup3("");
 
