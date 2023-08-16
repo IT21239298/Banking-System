@@ -13,8 +13,8 @@ public class Login  extends JFrame  implements ActionListener {
 
     JButton button1,button2,button3;
 
-
     Login(){
+        //create login form and interface
         super("Bank Management System");
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/bank.png") );
@@ -82,9 +82,6 @@ public class Login  extends JFrame  implements ActionListener {
         button3.setBounds(300,350,230,30);
         button3.addActionListener(this);
         add(button3);
-
-        
-
 
 
         ImageIcon iii1 = new ImageIcon(ClassLoader.getSystemResource("icon/backbg.png") );
