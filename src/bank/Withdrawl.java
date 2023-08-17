@@ -4,15 +4,18 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+import java.util.Date;
 
 public class Withdrawl extends JFrame implements ActionListener {
-
-
+    String pin;
 
     TextField textField;
 
     JButton b1,b2;
     Withdrawl(){
+
+        this.pin = pin;
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/atm2.png"));
         Image i2 = i1.getImage().getScaledInstance(1550,830,Image.SCALE_DEFAULT);
@@ -64,6 +67,25 @@ public class Withdrawl extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        try{
+            String amount = textField.getText();
+            Date date = new Date();
+            if (textField.getText().equals("")){
+                JOptionPane.showMessageDialog(null, "Please enter the amount you want to withdraw");
+            }else {
+                Con c= new Con();
+                ResultSet resultSet = c.statement.executeQuery("select * from bank where pin = '"+pin+"'");
+                int balance = 0;
+                while (resultSet.next()){
+                    if (resultSet.getString("type").equals("Deposit")){
+
+                    }
+                }
+            }
+
+        }catch(Exception E){
+
+        }
 
 
     }
