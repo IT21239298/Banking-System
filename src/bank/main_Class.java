@@ -7,8 +7,13 @@ import java.awt.event.ActionListener;
 
 public class main_Class extends JFrame implements ActionListener {
 
+    String pin;
+
     JButton b1,b2,b3,b4,b5,b6,b7;
-    main_Class(){
+    main_Class(String pin){
+
+
+        this.pin= pin;
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/atm2.png"));
         Image i2 = i1.getImage().getScaledInstance(1550,830,Image.SCALE_DEFAULT);
@@ -86,11 +91,18 @@ public class main_Class extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (e.getSource()==b1){
+            new Deposit(pin);
+            setVisible(false);
+
+
+
+        }
 
     }
 
     public static void main(String[] args) {
-        new main_Class();
+        new main_Class("");
 
     }
 }

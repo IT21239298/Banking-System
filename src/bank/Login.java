@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 public class Login  extends JFrame  implements ActionListener {
 
@@ -101,6 +102,17 @@ public class Login  extends JFrame  implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         try{
             if(e.getSource()==button1){
+                Con c= new Con();
+                String cardno = textField2.getText();
+                String pin = passwordField3.getText();
+                String q = "select * from login where cardnumber = '"+cardno+"' and pin = '"+pin+"'";
+                ResultSet resultSet = c.statement.executeQuery(q);
+                if (resultSet.next()){
+                    setVisible(false);
+                    new main_Class(pin);
+                }
+
+
 
             }else if (e.getSource()== button2){
                 textField2.setText("");
