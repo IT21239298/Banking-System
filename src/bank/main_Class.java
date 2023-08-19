@@ -28,14 +28,42 @@ public class main_Class extends JFrame {
         l3.add(b1);
 
 
-
-
-        // meaka hadanna oneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
         b2 =  new JButton("CASH WITHDRAWL");
         b2.setForeground(Color.WHITE);
         b2.setBackground(new Color(65,125,128));
-        b2.setBounds(410,272,150,35);
+        b2.setBounds(410,317,150,35);
         l3.add(b2);
+
+        b3 = new JButton("dffef");
+        b3.setForeground(Color.WHITE);
+        b3.setBackground(new Color(65,125,128));
+        b3.setBounds(410,362,150,35);
+        l3.add(b3);
+
+        b4 = new JButton("sndjnd");
+        b4.setForeground(Color.WHITE);
+        b4.setBackground(new Color(65,125,128));
+        b4.setBounds(410,410,150,35);
+        l3.add(b4);
+
+        b5 = new JButton("sithumfd");
+        b5.setForeground(Color.WHITE);
+        b5.setBackground(new Color(65,125,128));
+        b5.setBounds(700,272,150,35);
+        l3.add(b5);
+        
+        b6 = new JButton("ddjcdndj");
+        b6.setForeground(Color.WHITE);
+        b6.setBackground(new Color(65,125,128));
+        b6.setBounds(700,317,150,35);
+        l3.add(b6);
+
+        b7 = new JButton("sdhsdbds");
+        b7.setForeground(Color.WHITE);
+        b7.setBackground(new Color(65,125,128));
+        b7.setBounds(700,362,150,35);
+        l3.add(b7);
+
 
         setLayout(null);
         setSize(1550,1080);
