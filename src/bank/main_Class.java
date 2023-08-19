@@ -31,8 +31,26 @@ public class main_Class extends JFrame {
         b2 =  new JButton("CASH WITHDRAWL");
         b2.setForeground(Color.WHITE);
         b2.setBackground(new Color(65,125,128));
-        b2.setBounds(410,317,150,35);
+        b2.setBounds(700,274,150,35);
         l3.add(b2);
+
+        b3 =  new JButton("FAST CASH");
+        b3.setForeground(Color.WHITE);
+        b3.setBackground(new Color(65,125,128));
+        b3.setBounds(410,318,150,35);
+        l3.add(b3);
+
+        b4 =  new JButton("MINI STATEMENT");
+        b4.setForeground(Color.WHITE);
+        b4.setBackground(new Color(65,125,128));
+        b4.setBounds(700,318,150,35);
+        l3.add(b4);
+
+        b5 =  new JButton("PIN CHANGE");
+        b5.setForeground(Color.WHITE);
+        b5.setBackground(new Color(65,125,128));
+        b5.setBounds(410,362,150,35);
+        l3.add(b5);
 
 
 
