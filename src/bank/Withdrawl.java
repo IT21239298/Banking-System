@@ -78,9 +78,20 @@ public class Withdrawl extends JFrame implements ActionListener {
                 int balance = 0;
                 while (resultSet.next()){
                     if (resultSet.getString("type").equals("Deposit")){
+                        balance = Integer.parseInt(resultSet.getString("amount"));
 
+                    }else {
+                        balance -= Integer.parseInt(resultSet.getString("amount"));
                     }
                 }
+                if (balance < Integer.parseInt(amount)){
+                    JOptionPane.showMessageDialog(null,"Insuftient Balance");
+                    return;
+                }
+                c.statement.executeUpdate("insert into bank values('"+pin+"','"+date+"','withdrawl','"+amount+"')");
+                JOptionPane.showMessageDialog(null,"Rs. "+amount+" Debited Successfuly");
+                setVisible(false);
+               // new main
             }
 
         }catch(Exception E){
