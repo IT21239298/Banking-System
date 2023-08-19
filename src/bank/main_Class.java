@@ -6,12 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class main_Class extends JFrame implements ActionListener {
-
     String pin;
-
     JButton b1,b2,b3,b4,b5,b6,b7;
     main_Class(String pin){
-
 
         this.pin= pin;
 
@@ -81,7 +78,6 @@ public class main_Class extends JFrame implements ActionListener {
 
 
 
-
         setLayout(null);
         setSize(1550,1080);
         setLocation(0,0);
@@ -94,8 +90,6 @@ public class main_Class extends JFrame implements ActionListener {
         if (e.getSource()==b1){
             new Deposit(pin);
             setVisible(false);
-
-
 
         }
 
