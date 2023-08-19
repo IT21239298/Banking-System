@@ -52,6 +52,20 @@ public class main_Class extends JFrame {
         b5.setBounds(410,362,150,35);
         l3.add(b5);
 
+        b6 =  new JButton("BALANCE ENQUIRY");
+        b6.setForeground(Color.WHITE);
+        b6.setBackground(new Color(65,125,128));
+        b6.setBounds(700,362,150,35);
+        l3.add(b6);
+
+        b7 =  new JButton("EXIT");
+        b7.setForeground(Color.WHITE);
+        b7.setBackground(new Color(65,125,128));
+        b7.setBounds(700,406,150,35);
+        l3.add(b7);
+
+
+
 
 
         setLayout(null);
