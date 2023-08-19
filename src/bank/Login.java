@@ -37,7 +37,7 @@ public class Login  extends JFrame  implements ActionListener {
         label1.setBounds(230,125,450,40);
         add(label1);
 
-        label2 = new JLabel("Cart No:");
+        label2 = new JLabel("Card No:");
         label2.setFont(new Font("Ralway", Font.BOLD,28));
         label2.setForeground(Color.WHITE);
         label2.setBounds(150, 190, 375,30);

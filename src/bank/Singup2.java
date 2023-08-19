@@ -42,7 +42,7 @@ public class Singup2  extends JFrame implements ActionListener{
 
         String religion[] = {"Sinhala","Tamil","Muslim","Christrian","Other"};
         comboBox = new JComboBox(religion);
-        comboBox.setBackground(new Color(252,208,76));
+        comboBox.setBackground(new Color(147, 236, 196));
         comboBox.setFont(new Font("Railway",Font.BOLD,14));
         comboBox.setBounds(350,120,320,30);
         add(comboBox);
@@ -54,7 +54,7 @@ public class Singup2  extends JFrame implements ActionListener{
 
         String category[] = {"General","OBC","SC","ST","Other"};
         comboBox2 = new JComboBox(category);
-        comboBox2.setBackground(new Color(252,208,76));
+        comboBox2.setBackground(new Color(147, 236, 196));
         comboBox2.setFont(new Font("Railway",Font.BOLD,14));
         comboBox2.setBounds(350,170,320,30);
         add(comboBox2);
@@ -66,7 +66,7 @@ public class Singup2  extends JFrame implements ActionListener{
 
         String income[] = {"Null","<1,50,000","<2,50,000","5,00,00","Upto 10,00,000","Above 10,00,000"};
         comboBox3 = new JComboBox(income);
-        comboBox3.setBackground(new Color(252,208,76));
+        comboBox3.setBackground(new Color(147, 236, 196));
         comboBox3.setFont(new Font("Railway",Font.BOLD,14));
         comboBox3.setBounds(350,220,320,30);
         add(comboBox3);
@@ -78,7 +78,7 @@ public class Singup2  extends JFrame implements ActionListener{
 
         String education[] = {"Non-Graduate","UnderGraduate","Graduate","Post-Graduate","Doctrate","Other"};
         comboBox4 = new JComboBox(education);
-        comboBox4.setBackground(new Color(252,208,76));
+        comboBox4.setBackground(new Color(147, 236, 196));
         comboBox4.setFont(new Font("Railway",Font.BOLD,14));
         comboBox4.setBounds(350,270,320,30);
         add(comboBox4);
@@ -90,7 +90,7 @@ public class Singup2  extends JFrame implements ActionListener{
 
         String occupation[] = {"Salaried","Self-Employed","Business","Student","Retired","Other"};
         comboBox5 = new JComboBox(occupation);
-        comboBox5.setBackground(new Color(252,208,76));
+        comboBox5.setBackground(new Color(147, 236, 196));
         comboBox5.setFont(new Font("Railway",Font.BOLD,14));
         comboBox5.setBounds(350,340,320,30);
         add(comboBox5);
@@ -122,13 +122,13 @@ public class Singup2  extends JFrame implements ActionListener{
 
         r1 = new JRadioButton("Yes");
         r1.setFont(new Font("Railway",Font.BOLD,14));
-        r1.setBackground(new Color(252,208,76));
+        r1.setBackground(new Color(147, 236, 196));
         r1.setBounds(350,490,100,30);
         add(r1);
 
         r2 = new JRadioButton("No");
         r2.setFont(new Font("Railway",Font.BOLD,14));
-        r2.setBackground(new Color(252,208,76));
+        r2.setBackground(new Color(147, 236, 196));
         r2.setBounds(460,490,100,30);
         add(r2);
 
@@ -139,13 +139,13 @@ public class Singup2  extends JFrame implements ActionListener{
 
         e1 = new JRadioButton("Yes");
         e1.setFont(new Font("Railway",Font.BOLD,14));
-        e1.setBackground(new Color(252,208,76));
+        e1.setBackground(new Color(147, 236, 196));
         e1.setBounds(350,540,100,30);
         add(e1);
 
         e2 = new JRadioButton("No");
         e2.setFont(new Font("Railway",Font.BOLD,14));
-        e2.setBackground(new Color(252,208,76));
+        e2.setBackground(new Color(147, 236, 196));
         e2.setBounds(460,540,100,30);
         add(e2);
 
@@ -161,8 +161,8 @@ public class Singup2  extends JFrame implements ActionListener{
 
         next = new JButton("Next");
         next.setFont(new Font("Railway",Font.BOLD,14));
-        next.setBackground(Color.WHITE);
-        next.setForeground(Color.BLACK);
+        next.setBackground(Color.BLACK);
+        next.setForeground(Color.WHITE);
         next.setBounds(570,640,100,30);
         next.addActionListener(this);
         add(next);
@@ -170,7 +170,7 @@ public class Singup2  extends JFrame implements ActionListener{
         setLayout(null);
         setSize(850,750);
         setLocation(450,80);
-        getContentPane().setBackground(new Color(252,208,76));
+        getContentPane().setBackground(new Color(147, 236, 196));
         setVisible(true);
 
     }
