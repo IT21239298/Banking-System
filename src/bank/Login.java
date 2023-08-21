@@ -83,7 +83,6 @@ public class Login  extends JFrame  implements ActionListener {
         button3.addActionListener(this);
         add(button3);
 
-
         ImageIcon iii1 = new ImageIcon(ClassLoader.getSystemResource("icon/backbg.png") );
         Image iii2 = iii1.getImage().getScaledInstance(850,480, Image.SCALE_DEFAULT);
         ImageIcon iii3 = new ImageIcon(iii2);
