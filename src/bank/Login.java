@@ -7,7 +7,6 @@ import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 
 public class Login  extends JFrame  implements ActionListener {
-
     JLabel label1,label2,label3;
     JTextField textField2;
     JPasswordField passwordField3;
@@ -111,7 +110,6 @@ public class Login  extends JFrame  implements ActionListener {
                     setVisible(false);
                     new main_Class(pin);
                 }
-
 
             }else if (e.getSource()== button2){
                 textField2.setText("");
