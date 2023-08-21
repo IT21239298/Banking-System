@@ -32,7 +32,6 @@ public class main_Class extends JFrame implements ActionListener {
         b1.addActionListener(this);
         l3.add(b1);
 
-
         b2 =  new JButton("CASH WITHDRAWL");
         b2.setForeground(Color.WHITE);
         b2.setBackground(new Color(65,125,128));
@@ -75,9 +74,6 @@ public class main_Class extends JFrame implements ActionListener {
         b7.addActionListener(this);
         l3.add(b7);
 
-
-
-
         setLayout(null);
         setSize(1550,1080);
         setLocation(0,0);
@@ -92,7 +88,6 @@ public class main_Class extends JFrame implements ActionListener {
             setVisible(false);
 
         }
-
     }
 
     public static void main(String[] args) {
