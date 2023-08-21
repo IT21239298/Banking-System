@@ -87,6 +87,8 @@ public class main_Class extends JFrame implements ActionListener {
             new Deposit(pin);
             setVisible(false);
 
+        }else if (e.getSource()==b7){
+            System.exit(0);
         }
     }
 
