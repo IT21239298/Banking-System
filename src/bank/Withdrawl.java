@@ -67,35 +67,41 @@ public class Withdrawl extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        try{
-            String amount = textField.getText();
-            Date date = new Date();
-            if (textField.getText().equals("")){
-                JOptionPane.showMessageDialog(null, "Please enter the amount you want to withdraw");
-            }else {
-                Con c= new Con();
-                ResultSet resultSet = c.statement.executeQuery("select * from bank where pin = '"+pin+"'");
-                int balance = 0;
-                while (resultSet.next()){
-                    if (resultSet.getString("type").equals("Deposit")){
-                        balance = Integer.parseInt(resultSet.getString("amount"));
+        if (e.getSource()==b1) {
+            try {
+                String amount = textField.getText();
+                Date date = new Date();
+                if (textField.getText().equals("")) {
+                    JOptionPane.showMessageDialog(null, "Please enter the amount you want to withdraw");
+                } else {
+                    Con c = new Con();
+                    ResultSet resultSet = c.statement.executeQuery("select * from bank where pin = '" + pin + "'");
+                    int balance = 0;
+                    while (resultSet.next()) {
+                        if (resultSet.getString("type").equals("Deposit")) {
+                            balance = Integer.parseInt(resultSet.getString("amount"));
 
-                    }else {
-                        balance -= Integer.parseInt(resultSet.getString("amount"));
+                        } else {
+                            balance -= Integer.parseInt(resultSet.getString("amount"));
+                        }
                     }
+                    if (balance < Integer.parseInt(amount)) {
+                        JOptionPane.showMessageDialog(null, "Insuftient Balance");
+                        return;
+                    }
+                    c.statement.executeUpdate("insert into bank values('" + pin + "','" + date + "','withdrawl','" + amount + "')");
+                    JOptionPane.showMessageDialog(null, "Rs. " + amount + " Debited Successfully");
+                    setVisible(false);
+                    new main_Class(pin);
                 }
-                if (balance < Integer.parseInt(amount)){
-                    JOptionPane.showMessageDialog(null,"Insuftient Balance");
-                    return;
-                }
-                c.statement.executeUpdate("insert into bank values('"+pin+"','"+date+"','withdrawl','"+amount+"')");
-                JOptionPane.showMessageDialog(null,"Rs. "+amount+" Debited Successfully");
-                setVisible(false);
-                new main_Class(pin);
+
+            } catch (Exception E) {
+
             }
+        } else if (e.getSource()==b2) {
 
-        }catch(Exception E){
-
+            setVisible(false);
+            new main_Class(pin);
         }
 
 
