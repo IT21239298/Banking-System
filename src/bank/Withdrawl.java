@@ -13,7 +13,7 @@ public class Withdrawl extends JFrame implements ActionListener {
     TextField textField;
 
     JButton b1,b2;
-    Withdrawl(){
+    Withdrawl(String pin){
 
         this.pin = pin;
 
@@ -47,21 +47,21 @@ public class Withdrawl extends JFrame implements ActionListener {
         b1.setBounds(700,352,150,35);
         b1.setBackground(new Color(65,125,128));
         b1.setForeground(Color.WHITE);
-       // b1.addActionListener(this);
+        b1.addActionListener(this);
         l3.add(b1);
 
         b2 = new JButton("BACK");
         b2.setBounds(700,406,150,35);
         b2.setBackground(new Color(65,125,128));
         b2.setForeground(Color.WHITE);
-        //b2.addActionListener(this);
+        b2.addActionListener(this);
         l3.add(b2);
 
         setLayout(null);
         setSize(1550,830);
         setLocation(0,0);
         setVisible(true);
-        //ssss
+
 
     }
 
@@ -89,9 +89,9 @@ public class Withdrawl extends JFrame implements ActionListener {
                     return;
                 }
                 c.statement.executeUpdate("insert into bank values('"+pin+"','"+date+"','withdrawl','"+amount+"')");
-                JOptionPane.showMessageDialog(null,"Rs. "+amount+" Debited Successfuly");
+                JOptionPane.showMessageDialog(null,"Rs. "+amount+" Debited Successfully");
                 setVisible(false);
-               // new main
+                new main_Class(pin);
             }
 
         }catch(Exception E){
@@ -102,7 +102,7 @@ public class Withdrawl extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new Withdrawl();
+        new Withdrawl("");
 
     }
 }
