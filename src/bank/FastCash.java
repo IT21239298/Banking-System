@@ -18,9 +18,9 @@ public class FastCash extends JFrame  implements ActionListener {
         add(l3);
 
         JLabel label = new JLabel("SELECT WITHDRAWAL AMOUNT");
-        label.setBounds(430,180,700,35);
+        label.setBounds(445,180,700,35);
         label.setForeground(Color.WHITE);
-        label.setFont(new Font("System",Font.BOLD,28));
+        label.setFont(new Font("System",Font.BOLD,23));
         l3.add(label);
 
         b1 =  new JButton("Rs.100");
